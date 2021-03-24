@@ -1,0 +1,239 @@
+body {
+  margin: 5vh 5vw;
+  font-family: 'Cousine', sans-serif;
+  background: #9b9fb2; /* Old browsers */
+  background-image: url(../images/summerwater.jpg);
+  background-repeat: no-repeat;
+  background-size: 550%;
+  background-attachment: fixed;
+}
+#logo{
+  line-height: 60px;
+  margin-left: 4em;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  color: #275ef5;
+}
+section{
+  margin-top: 30px;
+}
+h1{
+  color: #fff;
+  font-size: 20px;
+}
+.card {
+  background: #ffffffda;
+  color: rgb(0, 0, 0);
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  margin-left: -4%;
+}
+.info{
+  text-align: center;
+}
+#stad{
+  font-size: 60px;
+}
+
+.beschrijving{
+ font-size: 60px;
+ color: #275ef586;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 20%;
+  border: none;
+  height: 44px;
+  width: 5rem;
+  outline: none;
+  background: #a80101;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 10px;
+  background: #7c7c7c2b;
+  color: rgba(255, 0, 0, 0.562);
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+button:hover {
+  background: #7c7c7c6b;
+  color: #ff0000;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+#map {
+  height: 90vh;
+  width: 90vw;
+}
+
+#testId{
+  color: red;
+}
+ .mapboxgl-popup-close-button {
+  font-size: 16px;
+  color: #fff;
+}
+.mapboxgl-popup-content {
+  padding: 20px 25px 15px 20px;
+  color: #fff;
+  background-color: #175641;
+}
+.mapboxgl-popup-content h3 {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  border-top-color: #175641;
+} 
+
+.testId{
+  color: red;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f52727;
+  opacity: 80%;
+  color: white;
+  text-align: center;
+}
+@media only screen and (min-width: 520px) {
+  body{
+    background-size: 400%;
+  }
+  .card{
+    margin-left: 5%;
+  }
+ 
+
+@media only screen and (min-width: 700px) {
+ body{
+  background-size: 300%;
+ }
+  #logo{
+    line-height: 60px;
+  }
+  .card{
+    margin-left: 10%;
+  }
+  
+
+
+@media only screen and (min-width: 800px) {
+  body{
+    background-size: 270%;
+  }
+  #logo{
+    line-height: 60px;
+    margin-left: -5px;
+    width: 50%;
+  }
+  .landing{
+    float: left;
+    position: absolute;
+    margin-top: -10px;
+    margin-right: 20px;
+  }
+  .land{
+    float: right;
+    margin-top: -10px;
+  }
+  .card {
+    margin-left: 20%;
+    float: right;
+  }
+  #map {
+    width: calc(100% - 800px);
+    margin-top: -22rem;
+    width: 15rem;
+    height: 21rem;
+    float: left;
+  }
+
+  @media only screen and (min-width: 900px) {
+    body{
+      background-size: 220%;
+    }
+    .card {
+      margin-left: 50%;
+      float: right;
+      width: 20rem;
+    }
+    #map {
+      width: calc(100% - 800px);
+      margin-top: -26rem;
+      width: 25rem;
+      height: 25rem;
+      float: left;
+    }
+@media only screen and (min-width: 1100px) {
+      body{
+        background-size: 190%;
+      }
+      .card {
+        float: right;
+        width: 25%;
+      }
+      #map {
+        float: left;
+        width: calc(100% - 200px);
+        width: 65%;
+        margin-top: -26rem;
+        height: 24rem;
+      }
+
+@media only screen and (min-width: 1300px) {
+        body{
+          background-size: 100%;
+        }
+        .card {
+          float: right;
+          width: 25%;
+        }
+        #map {
+          float: left;
+          width: calc(100% - 200px);
+          width: 65%;
+          margin-top: -26rem;
+          height: 25rem;
+        }

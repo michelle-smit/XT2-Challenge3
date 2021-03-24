@@ -1,0 +1,91 @@
+let weather = {
+  apiKey: "df117f9063bcf5e8f080fb30729f2509",
+  fetchWeather: function (city) {
+    fetch(
+      "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=" + this.apiKey)
+      .then((response) => {
+        if (!response.ok) {
+          alert("Geen weer specificaties gevonden");
+          throw new Error("Geen weer specificaties gevonden");
+        }
+        return response.json();
+      })
+      .then((data) => this.displayWeather(data));
+  },
+  displayWeather: function (data) {
+    const { name } = data;
+    const { icon, description } = data.weather[0];
+    const { temp, humidity } = data.main;
+    const { speed } = data.wind;
+    document.querySelector(".stad").innerText = "Weer's omstandigheden in " + name;
+    document.querySelector(".beschrijving").innerText = description;
+    document.querySelector(".temperatuur").innerText = temp + "°C";
+    document.querySelector(".Luchtvochtigheid").innerText =
+      "Luchtvochtigheid: " + humidity + "%";
+    document.querySelector(".wind").innerText =
+      "Wind snelheid: " + speed + " km/h";
+  },
+  search: function () {
+    this.fetchWeather(document.querySelector(".search-bar").value);
+  },
+};
+
+document.querySelector(".search button").addEventListener("click", function () {
+  weather.search();
+});
+
+document
+  .querySelector(".search-bar")
+  .addEventListener("keyup", function (event) {
+    if (event.key == "Enter") {
+      weather.search();
+    }
+  
+  });
+
+weather.fetchWeather("the%20Hague");
+
+// Set api token
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FtZWNoaWNrIiwiYSI6ImNrbW1haWI0ZDFpbXAyb3FvN3N3ZWExNWEifQ.FmbZO_HDeUFqE7GHJaEZuA';
+
+// Initialate map
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/gamechick/ckmmc4xsp51cx17of2w7wqw5y',
+
+  // Positioning the map on a certain longitute + latitude and zooming in
+  center: [4.322840, 52.067101],
+  zoom: 2,
+});
+
+var finland = new mapboxgl.Popup().setHTML('<h3>Finland</h3><p>Vlak maar hobelig gebied</p>');
+var peregino = new mapboxgl.Popup().setHTML('<h3 id="testId">Rusland</h3><p>Vlak terein tussen de bossen</p>');
+var oblastKirov = new mapboxgl.Popup().setHTML('<h3 id="testId">Oblast Kirov - Rusland</h3><p> vlakke grond</p>');
+var kazachstan = new mapboxgl.Popup().setHTML('<h3 id="testId">Kazachstan</h3><p>woestijn gebied</p>');
+var mauritanië = new mapboxgl.Popup().setHTML('<h3 id="testId">Mauritanië</h3><p> vlakke grond</p>');
+
+// Adding a marker based on lon lat coordinates
+var LandingsplaatsI = new mapboxgl.Marker({ icon: 'default', color: 'red' })
+  .setLngLat([24.009744, 61.171883]) //Svetogorsk - Finland
+  .setPopup(finland)
+  .addTo(map);
+
+var LandingsplaatsII = new mapboxgl.Marker({ icon: 'default', color: 'red' })
+  .setLngLat([31.506030, 57.683324]) //Peregino - Rusland
+  .setPopup(peregino)
+  .addTo(map);
+
+var LandingsplaatsIII = new mapboxgl.Marker({ icon: 'default', color: 'red' })
+  .setLngLat([57.275657, 52.585452]) //Oblast Kirov - Rusland
+  .setPopup(oblastKirov)
+  .addTo(map);
+
+var LandingsplaatsIV = new mapboxgl.Marker({ icon: 'default', color: 'red' })
+  .setLngLat([72.423806, 48.570093]) //Kazachstan
+  .setPopup(kazachstan)
+  .addTo(map);
+
+var LandingsplaatsV = new mapboxgl.Marker({ icon: 'default', color: 'red' })
+  .setLngLat([24.383569, -9.001379]) //Mauritanië
+  .setPopup(mauritanië)
+  .addTo(map);

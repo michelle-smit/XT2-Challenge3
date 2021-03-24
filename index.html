@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MapBox</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+    <script src="scripts/main.js" defer></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+    <link href="styles/base.css" rel="stylesheet" />
+	</head>
+	<body>
+	
+	<header>
+		<div id=logo>SpaceX <a id="logo-s">Client</a></a></div>
+	</header>
+
+	<section>
+		<h1 class="land">Type uw land in voor de weersgegevens:</h1>
+		<div class="card">
+			<div class="search">
+			  <input type="text" class="search-bar" placeholder="Search">
+			  <button>Zoek</button>
+			</div>
+			<div class="info">
+			  <h2 class="stad">Weer's omstandigheden in</h2>
+			  <h2 class="temperatuur">°C</h2>
+			  <div class="flex">
+				
+				<div class="beschrijving"></div>
+			  </div>
+			  <div class="Luchtvochtigheid">Luchtvochtigheid: </div>
+			  <div class="wind">Wind snelheid:  km/h</div>
+			</div>
+		</div>
+
+		<h1 class="landing">Advies landings plaatsen:</h1>
+		<div id="map"></div>
+	</section>
+	
+	<footer>
+		<div class="footer">
+			<p>© SpaceX -SchoolProject-16077024- 2021</p>
+		  </div>
+	</footer>
+	</body>
+</html>
