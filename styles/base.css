@@ -20,14 +20,25 @@ section{
   margin-top: 30px;
 }
 h1{
-  color: #fff;
   font-size: 20px;
 }
+.landing{
+  color: #fff;
+  height: 7rem;
+  text-align: center;
+}
+.land{
+  color: #fff;
+  text-align: center;
+}
+h3{
+  width: 100px;
+}
+
 .card {
   background: #ffffffda;
   color: rgb(0, 0, 0);
   padding: 2em;
-  border-radius: 30px;
   width: 100%;
   max-width: 420px;
   margin: 1em;
@@ -99,12 +110,13 @@ button:hover {
 }
 
 #map {
-  height: 90vh;
-  width: 90vw;
+  height: 70vh;
+  width: 90;
+  margin-top: -15px;
 }
 
 #testId{
-  color: red;
+  color: #27f5a6;
 }
  .mapboxgl-popup-close-button {
   font-size: 16px;
@@ -122,11 +134,6 @@ button:hover {
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
   border-top-color: #175641;
 } 
-
-.testId{
-  color: red;
-}
-
 .footer {
   position: fixed;
   left: 0;
@@ -143,6 +150,9 @@ button:hover {
   }
   .card{
     margin-left: 5%;
+  }
+  .map{
+    height: 200px;
   }
  
 
@@ -170,13 +180,21 @@ button:hover {
   }
   .landing{
     float: left;
+    width: calc(100% - 60%);
     position: absolute;
     margin-top: -10px;
     margin-right: 20px;
+    color: #000000;
+    background-color: #fcfcfcc2;
+    padding: 10px;
+    height: 9rem;
   }
   .land{
     float: right;
     margin-top: -10px;
+    color: #000;
+    background-color: #fcfcfcc2;
+    padding: 10px;
   }
   .card {
     margin-left: 20%;
@@ -184,8 +202,8 @@ button:hover {
   }
   #map {
     width: calc(100% - 800px);
-    margin-top: -22rem;
-    width: 15rem;
+    margin-top: -23rem;
+    width: 14rem;
     height: 21rem;
     float: left;
   }
@@ -201,10 +219,13 @@ button:hover {
     }
     #map {
       width: calc(100% - 800px);
-      margin-top: -26rem;
+      margin-top: -23rem;
       width: 25rem;
-      height: 25rem;
+      height: 22rem;
       float: left;
+    }
+    .landing{
+      width: calc(100% - 60%);
     }
 @media only screen and (min-width: 1100px) {
       body{
@@ -215,11 +236,16 @@ button:hover {
         width: 25%;
       }
       #map {
-        float: left;
         width: calc(100% - 200px);
         width: 65%;
-        margin-top: -26rem;
+        margin-top: -25rem;
         height: 24rem;
+      }
+      .land{
+        width: calc(100% - 70%);
+      }
+      .landing{
+        width: calc(100% - 43%);
       }
 
 @media only screen and (min-width: 1300px) {
@@ -231,9 +257,8 @@ button:hover {
           width: 25%;
         }
         #map {
-          float: left;
           width: calc(100% - 200px);
           width: 65%;
-          margin-top: -26rem;
-          height: 25rem;
+          margin-top: -23rem;
+          height: 20rem;
         }
