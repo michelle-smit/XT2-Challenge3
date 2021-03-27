@@ -65,10 +65,10 @@ var map = new mapboxgl.Map({
 map.addControl(new mapboxgl.NavigationControl());
 
 var finland = new mapboxgl.Popup().setHTML('<h3 id="testId">Finland - Satakunta</h3><p>Ruime grasvlaktes.</p><img src="./images/Satakunta.jpg" alt="Boerderij en land er omheen in Satakunta" width="210" height="90">');
-var peregino = new mapboxgl.Popup().setHTML('<h3 id="testId">Rusland - Veliki Novgorod</h3><p>Ruime openvlaktes maar veel schuine hellingen.</p><img src="./images/OblastPskov.jpg" alt="Girl in a jacket" width="210" height="90">');
-var oblastKirov = new mapboxgl.Popup().setHTML('<h3 id="testId">Rusland - Oefa</h3><p>Licht bebost met openvlaktes.</p><img src="./images/Basjkirostan.jpg" alt="Girl in a jacket" width="210" height="90">');
-var kazachstan = new mapboxgl.Popup().setHTML('<h3 id="testId">Kazachstan - Karaganda</h3><p>Bosrijkgebied met enkele openvlakte.</p><img src="./images/Qarağandı.jpg" alt="Girl in a jacket" width="210" height="90">');
-var mauritanië = new mapboxgl.Popup().setHTML('<h3 id="testId">Afrika - Mauritanië</h3><p> vlakke grond woestijngebied.</p><img src="./images/Mauritanië.jpg" alt="Girl in a jacket" width="210" height="90">');
+var peregino = new mapboxgl.Popup().setHTML('<h3 id="testId">Rusland - Veliki Novgorod</h3><p>Ruime openvlaktes maar veel schuine hellingen.</p><img src="./images/OblastPskov.jpg" alt="Oblast Pskov Rusland" width="210" height="90">');
+var oblastKirov = new mapboxgl.Popup().setHTML('<h3 id="testId">Rusland - Oefa</h3><p>Licht bebost met openvlaktes.</p><img src="./images/Basjkirostan.jpg" alt="Basjkirostan" width="210" height="90">');
+var kazachstan = new mapboxgl.Popup().setHTML('<h3 id="testId">Kazachstan - Karaganda</h3><p>Bosrijkgebied met enkele openvlakte.</p><img src="./images/Qaragandi.jpg" alt="Qaragandi" width="210" height="90">');
+var mauritanië = new mapboxgl.Popup().setHTML('<h3 id="testId">Afrika - Mauritanië</h3><p> vlakke grond woestijngebied.</p><img src="./images/mauritanie.jpg" alt="Mauritannie" width="210" height="90">');
 
 // Adding a marker based on lon lat coordinates
 var LandingsplaatsI = new mapboxgl.Marker({ icon: 'default', color: '#be1d09' })
