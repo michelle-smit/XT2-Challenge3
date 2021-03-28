@@ -4,7 +4,7 @@ body {
   background: #9b9fb2; /* Old browsers */
   background-image: url(../images/summerwater.jpg);
   background-repeat: no-repeat;
-  background-size: 500%;
+  background-size: fill;
   background-attachment: fixed;
 }
 #logo{
@@ -195,6 +195,7 @@ button:hover {
     color: #000;
     background-color: #fcfcfcc2;
     padding: 10px;
+    width: 48%;
   }
   .card {
     margin-left: 20%;
