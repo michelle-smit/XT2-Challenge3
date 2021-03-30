@@ -148,7 +148,12 @@ button:hover {
   text-align: center;
 }
 @media only screen and (min-width: 520px) {
-
+  .landing{
+    color: #000;
+  }
+  .land{
+    color: #000;
+  }
   .card{
     margin-left: 5%;
   }
