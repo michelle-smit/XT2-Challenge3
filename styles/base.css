@@ -26,7 +26,7 @@ h1{
   font-size: -20rem;
 }
 .landing{
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   height: 7rem;
   text-align: center;
 }
@@ -180,8 +180,6 @@ button:hover {
     width: 25%;
     position: absolute;
     margin-top: -10px;
-    margin-right: 20px;
-    color: #f10000;
     background-color: #fcfcfcc2;
     padding: 10px;
     height: 10rem;
