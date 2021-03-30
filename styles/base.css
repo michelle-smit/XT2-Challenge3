@@ -177,17 +177,18 @@ button:hover {
   }
   .landing{
     float: left;
-    width: calc(40% - 20px);
+    width: 25%;
     position: absolute;
     margin-top: -10px;
     margin-right: 20px;
     color: #f10000;
     background-color: #fcfcfcc2;
     padding: 10px;
-    height: 9rem;
+    height: 10rem;
   }
   .land{
     float: right;
+    width: 65%;
     margin-top: -10px;
     color: #000;
     background-color: #fcfcfcc2;
@@ -210,17 +211,20 @@ button:hover {
     .card {
       margin-left: 50%;
       float: right;
-      width: 20rem;
+      width: 22rem;
     }
     #map {
       width: calc(100% - 800px);
       margin-top: -23rem;
-      width: 25rem;
+      width: 23rem;
       height: 22rem;
       float: left;
     }
     .landing{
-      width: calc(100% - 60%);
+      width: calc(100% - 70%);
+    }
+    .land{
+      width: calc(100% - 320px);
     }
 @media only screen and (min-width: 1100px) {
 
