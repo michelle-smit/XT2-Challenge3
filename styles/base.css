@@ -163,7 +163,12 @@ button:hover {
  
 
 @media only screen and (min-width: 700px) {
-
+  .landing{
+    color: #000;
+  }
+  .land{
+    color: #000;
+  }
   #logo{
     line-height: 60px;
   }
@@ -185,6 +190,7 @@ button:hover {
     width: 25%;
     position: absolute;
     margin-top: -10px;
+    color: #000000;
     background-color: #fcfcfcc2;
     padding: 10px;
     height: 10rem;
@@ -225,9 +231,11 @@ button:hover {
     }
     .landing{
       width: calc(100% - 62%);
+      color: #000;
     }
     .land{
       width: calc(100% - 50%);
+      color: #000;
     }
 @media only screen and (min-width: 1100px) {
 
@@ -244,10 +252,12 @@ button:hover {
       .land{
         width: calc(100% - 71%);
         margin-right: 18px;
+        color: #000;
       }
       .landing{
         width: calc(100% - 43%);
         height: 180px;
+        color: #000;
       }
 
 @media only screen and (min-width: 1200px) {
@@ -267,10 +277,12 @@ button:hover {
         .land{
           width: calc(100% - 71%);
           margin-right: 17px;
+          color: #000;
         }
         .landing{
           width: calc(100% - 42%);
           height: 10rem;
+          color: #000;
         }
 @media only screen and (min-width: 1300px) {
           #map {
