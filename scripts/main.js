@@ -43,11 +43,12 @@ document
   
   });
 
-  weather.fetchWeather("stakunta");
-  weather.fetchWeather("novgorod");
-  weather.fetchWeather("oefa");
-  weather.fetchWeather("karaganda");
-  weather.fetchWeather("mauritanie");
+  weather.fetchWeather("The%20Hague");
+  // weather.fetchWeather("pori");
+  // weather.fetchWeather("novgorod");
+  // weather.fetchWeather("oefa");
+  // weather.fetchWeather("karaganda");
+  // weather.fetchWeather("mauritanie");
 
 // Set api token
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FtZWNoaWNrIiwiYSI6ImNrbW1haWI0ZDFpbXAyb3FvN3N3ZWExNWEifQ.FmbZO_HDeUFqE7GHJaEZuA';
@@ -95,3 +96,23 @@ var LandingsplaatsV = new mapboxgl.Marker({ icon: 'default', color: '#be1d09' })
   .setLngLat([24.383569, -9.001379]) //Mauritanië
   .setPopup(mauritanië)
   .addTo(map);
+
+  LandingsplaatsI.getElement().addEventListener('click', () => {
+    weather.fetchWeather("pori");
+    });
+  
+  LandingsplaatsII.getElement().addEventListener('click', () => {
+    weather.fetchWeather("novgorod");
+    });
+  
+  LandingsplaatsIII.getElement().addEventListener('click', () => {
+    weather.fetchWeather("oefa");
+    });
+
+  LandingsplaatsIV.getElement().addEventListener('click', () => {
+    weather.fetchWeather("karaganda");
+    });
+
+  LandingsplaatsV.getElement().addEventListener('click', () => {
+    weather.fetchWeather("mauritanie");
+    });

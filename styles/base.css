@@ -177,11 +177,11 @@ button:hover {
   }
   .landing{
     float: left;
-    width: calc(100% - 60%);
+    width: calc(40% - 20px);
     position: absolute;
     margin-top: -10px;
     margin-right: 20px;
-    color: #000000;
+    color: #f10000;
     background-color: #fcfcfcc2;
     padding: 10px;
     height: 9rem;
@@ -192,7 +192,6 @@ button:hover {
     color: #000;
     background-color: #fcfcfcc2;
     padding: 10px;
-    width: 48%;
   }
   .card {
     margin-left: 20%;
