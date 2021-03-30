@@ -200,9 +200,9 @@ button:hover {
   }
   #map {
     width: calc(100% - 800px);
-    margin-top: -23rem;
-    width: 14rem;
-    height: 21rem;
+    margin-top: -24rem;
+    width: 15rem;
+    height: 23rem;
     float: left;
   }
 
@@ -215,9 +215,9 @@ button:hover {
     }
     #map {
       width: calc(100% - 800px);
-      margin-top: -23rem;
+      margin-top: -24rem;
       width: 23rem;
-      height: 22rem;
+      height: 23rem;
       float: left;
     }
     .landing{
@@ -235,14 +235,15 @@ button:hover {
       #map {
         width: calc(100% - 200px);
         width: 65%;
-        margin-top: -25rem;
+        margin-top: -30rem;
         height: 24rem;
       }
       .land{
-        width: calc(100% - 70%);
+        width: calc(100% - 45rem);
       }
       .landing{
-        width: calc(100% - 43%);
+        width: calc(100% - 30rem);
+        height: 180px;
       }
 
 @media only screen and (min-width: 1200px) {
@@ -258,4 +259,10 @@ button:hover {
           width: 65%;
           margin-top: -23rem;
           height: 20rem;
+        }
+        .land{
+          width: calc(100% - 50rem);
+        }
+        .landing{
+          width: calc(100% - 30rem);
         }
