@@ -26,12 +26,12 @@ h1{
   font-size: -20rem;
 }
 .landing{
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   height: 7rem;
   text-align: center;
 }
 .land{
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 h3{
