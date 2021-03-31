@@ -24,14 +24,16 @@ section{
 }
 h1{
   font-size: -20rem;
+  color: rgb(255, 255, 255);
+}
+p{
+  color: rgb(255, 255, 255);
 }
 .landing{
-  color: rgb(0, 0, 0);
   height: 7rem;
   text-align: center;
 }
 .land{
-  color: rgb(255, 255, 255);
   text-align: center;
 }
 h3{
@@ -39,7 +41,7 @@ h3{
 }
 
 .card {
-  background: #ffffffda;
+  background:  #f3f3f3da;
   color: rgb(0, 0, 0);
   padding: 2em;
   width: 100%;
@@ -175,21 +177,27 @@ button:hover {
     margin-left: -5px;
     width: 50%;
   }
+  h1{
+    font-size: -20rem;
+    color: rgb(0, 0, 0);
+  }
+  p{
+    color: rgb(0, 0, 0);
+  }
   .landing{
     float: left;
     width: 25%;
     position: absolute;
     margin-top: -10px;
-    background-color: #fcfcfcc2;
+    background: #f3f3f3da;
     padding: 10px;
-    height: 10rem;
+    height: 8rem;
   }
   .land{
     float: right;
     width: 65%;
     margin-top: -10px;
-    color: #000;
-    background-color: #fcfcfcc2;
+    background:  #f3f3f3da;
     padding: 10px;
   }
   .card {
@@ -198,24 +206,24 @@ button:hover {
   }
   #map {
     width: calc(100% - 800px);
-    margin-top: -24rem;
+    margin-top: -23rem;
     width: 15rem;
-    height: 23rem;
+    height: 22rem;
     float: left;
   }
 
   @media only screen and (min-width: 900px) {
 
     .card {
-      margin-left: 50%;
+      margin-left: 60%;
       float: right;
-      width: 22rem;
+      width: calc(100% - 50%);
     }
     #map {
-      width: calc(100% - 800px);
-      margin-top: -24rem;
-      width: 23rem;
-      height: 23rem;
+      width: calc(100% - 62%);
+      margin-top: -23rem;
+      width: 20rem;
+      height: 22rem;
       float: left;
     }
     .landing{
@@ -233,8 +241,8 @@ button:hover {
       #map {
         width: calc(100% - 200px);
         width: 65%;
-        margin-top: -30rem;
-        height: 24rem;
+        margin-top: -24rem;
+        height: 23rem;
       }
       .land{
         width: calc(100% - 71%);
@@ -242,7 +250,7 @@ button:hover {
       }
       .landing{
         width: calc(100% - 43%);
-        height: 180px;
+        height: 140px;
       }
 
 @media only screen and (min-width: 1200px) {
@@ -255,9 +263,9 @@ button:hover {
         }
         #map {
           width: calc(100% - 200px);
-          width: 65%;
-          margin-top: -30rem;
-          height: 20rem;
+          width: 66%;
+          margin-top: -24rem;
+          height: 23rem;
         }
         .land{
           width: calc(100% - 71%);
@@ -265,10 +273,33 @@ button:hover {
         }
         .landing{
           width: calc(100% - 42%);
-          height: 10rem;
+          height: 9rem;
         }
+@media only screen and (min-width: 1230px) {
+          body{
+            background-size: fill;
+          }
+          .card {
+            float: right;
+            width: 25%;
+          }
+          #map {
+            width: calc(100% - 200px);
+            width: 66%;
+            margin-top: -22rem;
+            height: 20rem;
+          }
+          .land{
+            width: calc(100% - 71%);
+            margin-right: 17px;
+          }
+          .landing{
+            width: calc(100% - 42%);
+            height: 9rem;
+          }
 @media only screen and (min-width: 1300px) {
           #map {
-            margin-top: -24rem;
+            margin-top: -22rem;
             width: 66%;
+            height: 21rem;
           }
