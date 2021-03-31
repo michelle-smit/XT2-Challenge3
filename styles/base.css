@@ -41,8 +41,8 @@ h3{
 }
 
 .card {
-  background:  #f3f3f3da;
-  color: rgb(0, 0, 0);
+  background:  #000000da;
+  color: rgb(255, 255, 255);
   padding: 2em;
   width: 100%;
   max-width: 420px;
@@ -74,7 +74,7 @@ button {
   height: 44px;
   width: 5rem;
   outline: none;
-  background: #a80101;
+  background: #ff1100;
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: 0.2s ease-in-out;
@@ -86,7 +86,7 @@ input.search-bar {
   padding: 0.4em 1em;
   border-radius: 10px;
   background: #7c7c7c2b;
-  color: rgba(255, 0, 0, 0.562);
+  color: rgba(255, 94, 0, 0.747);
   font-family: inherit;
   font-size: 105%;
   width: calc(100% - 100px);
