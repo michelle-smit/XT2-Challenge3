@@ -42,13 +42,8 @@ document
     }
   
   });
-
+  //laat standaard het weer van Den Haag zien tot er een keuze gemaakt is in de map
   weather.fetchWeather("The%20Hague");
-  // weather.fetchWeather("pori");
-  // weather.fetchWeather("novgorod");
-  // weather.fetchWeather("oefa");
-  // weather.fetchWeather("karaganda");
-  // weather.fetchWeather("mauritanie");
 
 // Set api token
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FtZWNoaWNrIiwiYSI6ImNrbW1haWI0ZDFpbXAyb3FvN3N3ZWExNWEifQ.FmbZO_HDeUFqE7GHJaEZuA';
@@ -65,7 +60,7 @@ var map = new mapboxgl.Map({
 
 map.addControl(new mapboxgl.NavigationControl());
 
-var finland = new mapboxgl.Popup().setHTML('<h3 id="testId">Finland - Satakunta</h3><p>Ruime grasvlaktes.</p><img src="./images/Satakunta.jpg" alt="Boerderij en land er omheen in Satakunta" width="210" height="90">');
+var finland = new mapboxgl.Popup().setHTML('<h3 id="testId">Finland - Pori</h3><p>Ruime grasvlaktes.</p><img src="./images/Satakunta.jpg" alt="Boerderij en land er omheen in Satakunta" width="210" height="90">');
 var peregino = new mapboxgl.Popup().setHTML('<h3 id="testId">Rusland - Veliki Novgorod</h3><p>Ruime openvlaktes maar veel schuine hellingen.</p><img src="./images/OblastPskov.jpg" alt="Oblast Pskov Rusland" width="210" height="90">');
 var oblastKirov = new mapboxgl.Popup().setHTML('<h3 id="testId">Rusland - Oefa</h3><p>Licht bebost met openvlaktes.</p><img src="./images/Basjkirostan.jpg" alt="Basjkirostan" width="210" height="90">');
 var kazachstan = new mapboxgl.Popup().setHTML('<h3 id="testId">Kazachstan - Karaganda</h3><p>Bosrijkgebied met enkele openvlakte.</p><img src="./images/Qaragandi.jpg" alt="Qaragandi" width="210" height="90">');
@@ -73,27 +68,27 @@ var mauritanië = new mapboxgl.Popup().setHTML('<h3 id="testId">Afrika - Maurita
 
 // Adding a marker based on lon lat coordinates
 var LandingsplaatsI = new mapboxgl.Marker({ icon: 'default', color: '#be1d09' })
-  .setLngLat([24.009744, 61.171883]) //Svetogorsk - Finland
+  .setLngLat([24.009744, 61.171883]) //pori - Finland
   .setPopup(finland)
   .addTo(map);
 
 var LandingsplaatsII = new mapboxgl.Marker({ icon: 'default', color: '#eb560b' })
-  .setLngLat([31.506030, 57.683324]) //Peregino - Rusland
+  .setLngLat([31.506030, 57.683324]) //Velik novgorod - Rusland
   .setPopup(peregino)
   .addTo(map);
 
 var LandingsplaatsIII = new mapboxgl.Marker({ icon: 'default', color: '#be1d09' })
-  .setLngLat([57.275657, 52.585452]) //Oblast Kirov - Rusland
+  .setLngLat([57.275657, 52.585452]) //Oefa - Rusland
   .setPopup(oblastKirov)
   .addTo(map);
 
 var LandingsplaatsIV = new mapboxgl.Marker({ icon: 'default', color: '#eb560b' })
-  .setLngLat([72.423806, 48.570093]) //Kazachstan
+  .setLngLat([72.423806, 48.570093]) //karaganda - Kazachstan
   .setPopup(kazachstan)
   .addTo(map);
 
 var LandingsplaatsV = new mapboxgl.Marker({ icon: 'default', color: '#be1d09' })
-  .setLngLat([24.383569, -9.001379]) //Mauritanië
+  .setLngLat([24.383569, -9.001379]) //Mauritanië - Afrika
   .setPopup(mauritanië)
   .addTo(map);
 
