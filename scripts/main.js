@@ -68,7 +68,7 @@ var mauritanië = new mapboxgl.Popup().setHTML('<h3 id="testId">Afrika - Maurita
 
 // Adding a marker based on lon lat coordinates
 var LandingsplaatsI = new mapboxgl.Marker({ icon: 'default', color: '#be1d09' })
-  .setLngLat([24.009744, 61.171883]) //pori - Finland
+  .setLngLat([22.22554 , 61.36516]) //pori - Finland
   .setPopup(finland)
   .addTo(map);
 
@@ -78,17 +78,17 @@ var LandingsplaatsII = new mapboxgl.Marker({ icon: 'default', color: '#eb560b' }
   .addTo(map);
 
 var LandingsplaatsIII = new mapboxgl.Marker({ icon: 'default', color: '#be1d09' })
-  .setLngLat([57.275657, 52.585452]) //Oefa - Rusland
+  .setLngLat([57.200704 , 53.930923 ]) //Oefa - Rusland
   .setPopup(oblastKirov)
   .addTo(map);
 
 var LandingsplaatsIV = new mapboxgl.Marker({ icon: 'default', color: '#eb560b' })
-  .setLngLat([72.423806, 48.570093]) //karaganda - Kazachstan
+  .setLngLat([73.351284 , 49.367116]) //karaganda - Kazachstan
   .setPopup(kazachstan)
   .addTo(map);
 
 var LandingsplaatsV = new mapboxgl.Marker({ icon: 'default', color: '#be1d09' })
-  .setLngLat([24.383569, -9.001379]) //Mauritanië - Afrika
+  .setLngLat([-8.791963 , 20.348700 ]) //Mauritanië - Afrika
   .setPopup(mauritanië)
   .addTo(map);
 
