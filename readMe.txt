@@ -1,5 +1,5 @@
 Ik heb De site zo gemaakt dat hij van enkel collomns naar dubbel gaat en tussen
-door de cellen ongeleijk verdeeld. Zo heb ik ook een uitleg collomn toegevoegt 
+door de cellen ongelijk verdeeld. Zo heb ik ook een uitleg collomn toegevoegt 
 zodat de functie van beide maps wordt getoond.
 
 Voor de MapBox heb ik gekozen voor een aantal mapmarkers die locaties aangeven.
@@ -10,6 +10,9 @@ De Weersomstandigheden staan bij de mobiele site boven aan. Aangezien dit de
 belangrijkeste informatie is en dit de keuze van de landingsplaats het meeste 
 beinvloed. Naast de advies landingslocatie kun je ook een eigen landings plaats 
 in tikken en zien wat de weersomstandigheden momenteel daar zijn.
+
+wanneer een locatie aangeklikt wordt zal de weersinformatie van deze locatie getoond 
+worden en de pop-up van de marker toont een afbeelding van de potentiele landingslocatie.
 
 De foutmelding van de weers specificaties werkt niet zo als het hoort nu je 
 de pagina laad verschijnt de melding. De melding hoort eigelijk pas te verschijnen

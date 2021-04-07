@@ -1,6 +1,6 @@
 /*import custom font*/
 @import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
-
+/*Telefoon uitlijning*/
 body {
   margin: 5vh 5vw;
   font-family: 'Cousine', sans-serif;
@@ -8,7 +8,6 @@ body {
   background-image: url(../images/summerwater.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
 }
 #logo{
   line-height: 60px;
@@ -149,6 +148,7 @@ button:hover {
   color: white;
   text-align: center;
 }
+
 @media only screen and (min-width: 520px) {
   section{
     margin-top: -5px;

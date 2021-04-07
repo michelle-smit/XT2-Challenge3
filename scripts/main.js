@@ -1,3 +1,4 @@
+//weer kaart - aanroep stad, temperatuur, luchtivochtigheid en windsnelheid
 let weather = {
   apiKey: "df117f9063bcf5e8f080fb30729f2509",
   fetchWeather: function (city) {
@@ -45,15 +46,15 @@ document
   //laat standaard het weer van Den Haag zien tot er een keuze gemaakt is in de map
   weather.fetchWeather("The%20Hague");
 
-// Set api token
+//api token
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FtZWNoaWNrIiwiYSI6ImNrbW1haWI0ZDFpbXAyb3FvN3N3ZWExNWEifQ.FmbZO_HDeUFqE7GHJaEZuA';
 
-// Initialate map
+//Opent map
 var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/gamechick/ckmmc4xsp51cx17of2w7wqw5y',
 
-  // Positioning the map on a certain longitute + latitude and zooming in
+  //Positioning de kaart op een bepaalde longitute + latitude en zoomed in
   center: [4.322840, 38.067101],
   zoom: 1,
 });
@@ -66,7 +67,7 @@ var oblastKirov = new mapboxgl.Popup().setHTML('<h3 id="testId">Rusland - Oefa</
 var kazachstan = new mapboxgl.Popup().setHTML('<h3 id="testId">Kazachstan - Karaganda</h3><p style="color:white;">Bosrijkgebied met enkele openvlakte.</p><img src="./images/Qaragandi.jpg" alt="Qaragandi" width="210" height="90">');
 var mauritanië = new mapboxgl.Popup().setHTML('<h3 id="testId">Afrika - Mauritanië</h3><p style="color:white;"> vlakke grond woestijngebied.</p><img src="./images/mauritanie.jpg" alt="Mauritannie" width="210" height="90">');
 
-// Adding a marker based on lon lat coordinates
+//Voegt een marker toe gebasseerd op lon lat coordinaten
 var LandingsplaatsI = new mapboxgl.Marker({ icon: 'default', color: '#be1d09' })
   .setLngLat([22.22554 , 61.36516]) //pori - Finland
   .setPopup(finland)
@@ -92,6 +93,7 @@ var LandingsplaatsV = new mapboxgl.Marker({ icon: 'default', color: '#be1d09' })
   .setPopup(mauritanië)
   .addTo(map);
 
+  //roept weer aan van kaart locatie naar advies locatie
   LandingsplaatsI.getElement().addEventListener('click', () => {
     weather.fetchWeather("pori");
     });
